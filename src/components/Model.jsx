@@ -8,7 +8,7 @@ export default function Model() {
     const { nodes } = useGLTF('/medias/shards.glb')
     
     return (
-            <group scale={viewport.width / 3.0} >
+            <group scale={viewport.width / 2.5} >
                 {
                     nodes.Scene.children.map( (mesh, i) => {
                         return <Mesh data={mesh} key={i}/>
